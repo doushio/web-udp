@@ -11,7 +11,7 @@
   "author": "Eric McDaniel <eric.mcdaniel@gmail.com>",
   "license": "ISC",
   "devDependencies": {
-    "wrtc": "0.3.2"
+    "wrtc": "0.4.1"
   },
   "peerDependencies": {
     "wrtc": ">=0.4.1"
