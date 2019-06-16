@@ -44,12 +44,16 @@
     "format": "prettier packages/**/*.ts --write",
     "bootstrap": "lerna bootstrap --hoist",
     "build": "lerna run build",
-    "precommit": "lint-staged",
-    "prepush": "npm test",
     "start": "node examples/server.js",
     "test": "jest",
     "test-coverage": "jest --verbose --coverage"
   },
   "version": "1.2.0",
-  "dependencies": {}
+  "dependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "pre-push": "npm test"
+    }
+  }
 }
